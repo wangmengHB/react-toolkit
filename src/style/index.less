@@ -1,20 +1,25 @@
-
 // 重置浏览器的默认样式
 @import './base/reset.css';
 
 // 常用的 css 样式
 @import './base/clearfix.css';
 
-
-
-
-
 // 预定义的颜色系
 @import './color/colors.less';
-// 预定义变量
+
+// 预定义主题变量
 @import './themes/variables.less';
 
 
-@import "./core/browser-reset.less";
-@import "./core/global-base.less";
-@import "./core/util.less";
+// 导入 less mixnin， 即自定义的一些 less util 函数
+@import './mixins/index.less';
+
+// 预定义全局样式：全局动画
+@import './core/motion.less';
+
+// 预定义全局样式：最小全局样式
+@import './core/global.less';
+
+
+// icon 方案
+@import './core/ant-icon.less';
